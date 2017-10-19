@@ -12,7 +12,7 @@ const reindeerColorGenerator = function* () {
 const reindeerColorFactory = reindeerColorGenerator()
 
 const reindeerBuilder = function(name) {
-    return Object.create( {
+    return Object.create(null, {
         "name": {
             enumerable: true,
             value: name,
